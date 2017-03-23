@@ -146,7 +146,6 @@ local markup = lain.util.markup
 local separators = lain.util.separators
 
 local clockicon = wibox.widget.imagebox(beautiful.widget_clock)
---local mytextclock = wibox.widget.textclock(" %a %d %b  %H:%M")
 
 local mytextclock = lain.widgets.abase({
     timeout  = 5,
@@ -170,9 +169,10 @@ local myweather = lain.widgets.weather({
     city_id = 2842647, -- Saarbrücken
     settings = function()
         units = math.floor(weather_now["main"]["temp"])
-        widget:set_markup(" " .. units .. " ")
+        widget:set_markup(" " .. units .. "° ")
     end
 })
+myweather.attach(myweather.icon)
 
 -- MPD
 local mpdicon = wibox.widget.imagebox(beautiful.widget_music)
