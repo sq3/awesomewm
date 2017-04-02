@@ -356,11 +356,9 @@ local tasklist_buttons = awful.util.table.join(
                          c:raise()
                        elseif client.focus == c then
                          if c.maximized then
-                           c.maximized_horizontal = false
-                           c.maximized_vertical = false
+                           c.maximized = false
                          else
-                           c.maximized_horizontal = true
-                           c.maximized_vertical = true
+                           c.maximized = true
                            c:raise()
                          end
                        else
@@ -368,24 +366,18 @@ local tasklist_buttons = awful.util.table.join(
                        end
                      end),
                      awful.button({ }, 3, function (c)
-                                              if not c.minimized then
-                                                  c.minimized = true
-                                              else
-                                                  -- Without this, the following
-                                                  -- :isvisible() makes no sense
-                                                  c.minimized = false
-                                                  if not c:isvisible() and c.first_tag then
-                                                      c.first_tag:view_only()
-                                                  end
-                                              end
-                                          end),
-                     awful.button({ }, 2, client_menu_toggle_fn()),
-                     awful.button({ }, 4, function ()
-                                              awful.client.focus.byidx(1)
-                                          end),
-                     awful.button({ }, 5, function ()
-                                              awful.client.focus.byidx(-1)
-                                          end))
+                       if not c.minimized then
+                         c.minimized = true
+                       else
+                         -- Without this, the following
+                         -- :isvisible() makes no sense
+                         c.minimized = false
+                         if not c:isvisible() and c.first_tag then
+                           c.first_tag:view_only()
+                         end
+                       end
+                     end),
+                     awful.button({ }, 2, client_menu_toggle_fn()))
 
 local function set_wallpaper(s)
     -- Wallpaper
