@@ -46,6 +46,10 @@ Features
 Gallery
 =======
 
+**Powerarrow sq3**, inspired by powerarrow darker
+
+.. image:: /screenshots/powerarrow-sq3.png
+
 **Multicolor**, inspired by lucamanni_
 
 .. image:: http://dotshare.it/public/images/uploads/650.png
