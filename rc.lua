@@ -315,6 +315,8 @@ local spr     = wibox.widget.textbox(' ')
 local arrl_dl = separators.arrow_left(beautiful.bg_focus, "alpha")
 local arrl_ld = separators.arrow_left("alpha", beautiful.bg_focus)
 
+local arrl_dlsysinfo = separators.arrow_left(beautiful.bg_sysinfo, "alpha")
+local arrl_ldsysinfo = separators.arrow_left("alpha", beautiful.bg_sysinfo)
 -- Create a wibox for each screen and add it
 local taglist_buttons = awful.util.table.join(
                     awful.button({ }, 1, function(t) t:view_only() end),
