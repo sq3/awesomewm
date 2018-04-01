@@ -8,7 +8,7 @@
 
 local theme                                     = {}
 
-theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/powerarrow-darker"
+theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/powerarrow-sq3"
 theme.wallpaper                                 = theme.dir .. "/wall.png"
 
 theme.font                                      = "Ubuntu 8"

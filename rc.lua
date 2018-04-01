@@ -55,7 +55,7 @@ run_once("unclutter -root")
 
 -- {{{ Variable definitions
 -- beautiful init
-beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/powerarrow-darker/theme.lua")
+beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/powerarrow-sq3/theme.lua")
 
 -- common
 local modkey     = "Mod4"
@@ -160,7 +160,7 @@ local mytextclock = awful.widget.textclock("W %V  %Y-%m-%d  %H:%M:%S ", 1)
 
 -- calendar
 lain.widgets.calendar.attach(mytextclock, {
-    cal = "/usr/bin/cal -m --color=always",
+    cal = "/usr/bin/cal --color=always",
     notification_preset = {
         font = "Inconsolata 10",
         fg   = beautiful.fg_normal,
@@ -436,13 +436,16 @@ awful.screen.connect_for_each_screen(function(s)
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
             spr,
+            s.mymainmenu,
             s.mytaglist,
             s.mypromptbox,
             spr,
         },
         spr,
+        --s.mytasklist, -- Middle widget87afb4
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
+          --  wibox.widget.systray(),
             spr,
             arrl_ldsysinfo,
             wibox.container.background(memicon, beautiful.bg_sysinfo),
