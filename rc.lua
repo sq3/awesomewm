@@ -60,16 +60,16 @@ beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/powerarrow-darker/t
 -- common
 local modkey     = "Mod4"
 local altkey     = "Mod1"
-local terminal   = "/usr/bin/sakura"
-local editor     = "/usr/bin/nvim"
+local terminal   = "/usr/local/bin/termite"
+local editor     = "/usr/bin/vim"
 
 -- user defined
-local browser    = "/usr/bin/qutebrowser"
-local mail       = "/usr/bin/thunderbird"
-local chat       = "/usr/bin/franz-bin"
-local gui_editor = "/usr/bin/gvim"
+local browser    = "chromium"
+local mail       = "mutt"
+local chat       = "weechat"
+local gui_editor = "subl"
 local graphics   = "/usr/bin/gimp"
-local file_browser = "/usr/bin/nemo"
+local file_browser = "thunar"
 local iptraf     = terminal .. " -e /usr/bin/bwm-ng"
 local mixer      = terminal .. " -e /usr/bin/alsamixer"
 local musicplr   = terminal .. " -e /usr/bin/ncmpcpp"
