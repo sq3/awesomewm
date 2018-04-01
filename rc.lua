@@ -198,7 +198,7 @@ mpdwidget:buttons(mpdbtns)
 local memicon = wibox.widget.imagebox(beautiful.widget_mem)
 local memwidget = lain.widgets.mem({
     settings = function()
-        widget:set_text(" " .. mem_now.used .. "MB ")
+        widget:set_text(" " .. mem_now.perc .. "% ")
     end
 })
 
