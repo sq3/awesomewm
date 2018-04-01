@@ -148,6 +148,7 @@ local mymainmenu = freedesktop.menu.build({
         -- other triads can be put here
     }
 })
+
 --menubar.utils.terminal = terminal -- Set the Menubar terminal for applications that require it
 -- }}}
 
@@ -317,6 +318,7 @@ local arrl_ld = separators.arrow_left("alpha", beautiful.bg_focus)
 
 local arrl_dlsysinfo = separators.arrow_left(beautiful.bg_sysinfo, "alpha")
 local arrl_ldsysinfo = separators.arrow_left("alpha", beautiful.bg_sysinfo)
+
 -- Create a wibox for each screen and add it
 local taglist_buttons = awful.util.table.join(
                     awful.button({ }, 1, function(t) t:view_only() end),
