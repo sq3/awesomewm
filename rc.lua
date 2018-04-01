@@ -167,16 +167,6 @@ lain.widgets.calendar.attach(mytextclock, {
     }
 })
 
--- Weather
-local myweather = lain.widgets.weather({
-    city_id = 2842647, -- Saarbrücken
-    settings = function()
-        units = math.floor(weather_now["main"]["temp"])
-        widget:set_markup(" " .. units .. "° ")
-    end
-})
-myweather.attach(myweather.icon)
-
 -- MPD
 local mpdicon = wibox.widget.imagebox(beautiful.widget_music)
 mpdicon:buttons(awful.util.table.join(awful.button({ }, 1, function () awful.util.spawn_with_shell(musicplr) end)))
