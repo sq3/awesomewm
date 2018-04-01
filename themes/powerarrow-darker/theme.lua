@@ -34,6 +34,7 @@ theme.titlebar_bg_normal                        = "#FFFFFF"
 theme.titlebar_fg_focus                         = theme.green
 theme.taglist_bg_focus                          = theme.darkgrey
 
+theme.bg_sysinfo                                = '#666666'
 theme.menu_height                               = 16
 theme.menu_width                                = 140
 theme.menu_submenu_icon                         = theme.dir .. "/icons/submenu.png"
