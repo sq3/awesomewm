@@ -55,7 +55,7 @@ run_once("unclutter -root")
 
 -- {{{ Variable definitions
 -- beautiful init
-beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/theme.lua")
+beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/powerarrow-darker/theme.lua")
 
 -- common
 local modkey     = "Mod4"
