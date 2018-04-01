@@ -27,10 +27,12 @@ theme.border_width                              = 1
 theme.border_normal                             = "#3F3F3F"
 theme.border_focus                              = "#7F7F7F"
 theme.border_marked                             = "#CC9393"
-theme.tasklist_bg_focus                         = "#1A1A1A"
-theme.titlebar_bg_focus                         = theme.bg_focus
-theme.titlebar_bg_normal                        = theme.bg_normal
-theme.titlebar_fg_focus                         = theme.fg_focus
+theme.tasklist_bg_focus                         = theme.darkgrey
+theme.taglist_fg_focus                          = "#00CCFF"
+theme.titlebar_bg_focus                         = "#FFFFFF"
+theme.titlebar_bg_normal                        = "#FFFFFF"
+theme.titlebar_fg_focus                         = theme.green
+theme.taglist_bg_focus                          = theme.darkgrey
 
 theme.menu_height                               = 16
 theme.menu_width                                = 140
