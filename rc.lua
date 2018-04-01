@@ -438,10 +438,9 @@ awful.screen.connect_for_each_screen(function(s)
             s.mypromptbox,
             spr,
         },
-        s.mytasklist, -- Middle widget
+        spr,
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            wibox.widget.systray(),
             spr,
             arrl_ld,
             wibox.container.background(mpdicon, beautiful.bg_focus),
@@ -476,6 +475,14 @@ awful.screen.connect_for_each_screen(function(s)
             arrl_ld,
             wibox.container.background(s.mylayoutbox, beautiful.bg_focus),
         },
+    }
+
+    -- Add widgets to the infowibox
+    s.myinfowibox:setup {
+        layout = wibox.layout.align.horizontal,
+         s.mytasklist, -- Middle widget87afb4
+         spr,
+         wibox.widget.systray(),
     }
 end)
 -- }}}
