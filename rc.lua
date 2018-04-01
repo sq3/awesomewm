@@ -155,15 +155,7 @@ local mymainmenu = freedesktop.menu.build({
 local markup = lain.util.markup
 local separators = lain.util.separators
 
-local clockicon = wibox.widget.imagebox(beautiful.widget_clock)
-
-local mytextclock = lain.widgets.abase({
-    timeout  = 5,
-    cmd      = " date +'%a %d %b %R'",
-    settings = function()
-        widget:set_markup(" " .. output)
-    end
-})
+local mytextclock = awful.widget.textclock("W %V  %Y-%m-%d  %H:%M:%S ", 1)
 
 -- calendar
 lain.widgets.calendar.attach(mytextclock, {
