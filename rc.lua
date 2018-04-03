@@ -57,6 +57,8 @@ run_once("unclutter -root")
 -- beautiful init
 beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/powerarrow-sq3/theme.lua")
 
+beautiful.useless_gap = 3
+
 -- common
 local modkey     = "Mod4"
 local altkey     = "Mod1"
